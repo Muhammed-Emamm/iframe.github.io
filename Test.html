@@ -1,0 +1,25 @@
+
+<h1>HELLO THIS MY PERSONAL DATA</h1>
+
+<hr>
+
+<h5 id="username">Username :   </h5>
+<h5 id="firstname">First Name :   </h5>
+<h5 id="lastname">Last Name :   </h5>
+<h5 id="gender">Gender :   </h5>
+<h5 id="email">Email :   </h5>
+
+<script>
+const queryString = window.location.search;
+const urlParams = new URLSearchParams(queryString);
+const username = urlParams.get('username');
+const firstname = urlParams.get('firstname');
+const lastname = urlParams.get('lastname');
+const gender = urlParams.get('gender');
+const email = urlParams.get('email');
+document.getElementById('username').innerText =document.getElementById('username').innerText + username; 
+document.getElementById('firstname').innerText =document.getElementById('firstname').innerText + firstname; 
+document.getElementById('lastname').innerText =document.getElementById('lastname').innerText + lastname; 
+document.getElementById('gender').innerText =document.getElementById('gender').innerText + gender; 
+document.getElementById('email').innerText =document.getElementById('email').innerText + email; 
+</script>
